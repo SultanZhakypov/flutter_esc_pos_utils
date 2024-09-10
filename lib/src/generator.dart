@@ -612,7 +612,7 @@ class Generator {
       }
 
       image =
-          copyResize(imgSrc, width: size, interpolation: Interpolation.linear);
+          copyResize(imgSrc, width: size, interpolation: Interpolation.average);
     } else {
       image = Image.from(imgSrc); // make a copy
     }
